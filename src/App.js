@@ -1,24 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './Components/Header/Header';
+import Surf from './Components/Surf/Surf';
+import Travel from './Components/Travel/Travel';
+import Sleep from './Components/Sleep/Sleep';
+import Shop from './Components/Shop/Shop';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          blablabla
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div className="container">
+        <Surf />
+        <Travel />
+        <Sleep />
+        <Shop />
+      </div>
     </div>
   );
 }
