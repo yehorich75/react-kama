@@ -1,18 +1,15 @@
 import React from 'react';
-// import logo from './logo.svg';
 import './App.css';
-import './Components/Header/Header';
-import './Components/Surf/Surf';
-import './Components/Travel/Travel';
-import './Components/Sleep/Sleep';
-import './Components/Shop/Shop';
+import Header from './Components/Header/Header';
+import Surf from './Components/Surf/Surf';
+import Travel from './Components/Travel/Travel';
+import Sleep from './Components/Sleep/Sleep';
+import Shop from './Components/Shop/Shop';
 
-
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="header">
-      </header>
+      <Header />
       <div className="container">
         <Surf />
         <Travel />
