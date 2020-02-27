@@ -2,6 +2,11 @@ import React from "react";
 import classes from './Header.module.css';
 import Logo from '../../img/logo.svg';
 import Arrows from '../../img/arrows-down.svg';
+import { ReactComponent as Map } from './Map.svg';
+import Slider from "react-slick";
+import "~slick-carousel/slick/slick.css"; 
+import "~slick-carousel/slick/slick-theme.css";
+
 
 const Header = () => {
     return (
@@ -13,7 +18,9 @@ const Header = () => {
                         <img src={Arrows} alt="Arrow Down" />
                     </a>
                 </div>
-                <div className={classes.map}></div>
+                <div className={classes.map}>
+                    <Map />
+                </div>
                 <div className="header-aside">
                     <div className="logo">
                         <a href="#">
@@ -21,7 +28,7 @@ const Header = () => {
                         </a>
                     </div>
                 </div>
-                <div className="header__slider"></div>
+                <div className={classes.slider}></div>
                 <div className="slider-dotshead"></div>
             </header>
         </div>
