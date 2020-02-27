@@ -4,8 +4,8 @@ import Logo from '../../img/logo.svg';
 import Arrows from '../../img/arrows-down.svg';
 import { ReactComponent as Map } from './Map.svg';
 import Slider from "react-slick";
-import "~slick-carousel/slick/slick.css";
-import "~slick-carousel/slick/slick-theme.css";
+// import "~slick-carousel/slick/slick.css";
+// import "~slick-carousel/slick/slick-theme.css";
 import Menu from './Menu'
 
 
@@ -30,6 +30,7 @@ const Header = () => {
                     </div>
                     <Menu />
                 </div>
+                <Slider />
                 <div className={classes.slider}></div>
                 <div className="slider-dotshead"></div>
             </header>
