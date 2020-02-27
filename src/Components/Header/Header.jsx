@@ -31,7 +31,11 @@ const Header = () => {
                     <Menu />
                 </div>
                 <Slider />
-                <div className={classes.slider}></div>
+                <div className={classes.slider}>
+                    <div class={`${classes.item} slider-item`}>
+
+                    </div>
+                </div>
                 <div className="slider-dotshead"></div>
             </header>
         </div>
