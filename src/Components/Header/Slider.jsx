@@ -1,3 +1,7 @@
+import React from "react";
+
+const Aside = () => {
+  return (
 <div>
   <div class="header__slider">
     <div class="header__slider-item slider-item">
@@ -71,4 +75,7 @@
       </div>
     </div>
   </div>
-</div>;
+</div>
+  );
+};
+

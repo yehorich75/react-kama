@@ -1,6 +1,9 @@
 import React from "react";
 import Logo from '../../../img/logo.svg';
 import iconSurf from '../../../img/nav-icon-surf.svg';
+import iconTravel from '../../../img/nav-icon-travel.svg';
+import iconSleep from '../../../img/nav-icon-sleep.svg';
+import iconShop from '../../../img/nav-icon-shop.svg';
 import classes from "./Aside.module.css";
 
 const Aside = () => {
@@ -20,17 +23,17 @@ const Aside = () => {
           </li>
           <li className="menu__item">
             <a href="#">
-              <img src="../../img/nav-icon-travel.svg" alt="Travel" />
+              <img src={iconTravel} alt="Travel" />
             </a>
           </li>
           <li className="menu__item">
             <a href="#">
-              <img src="img/nav-icon-sleep.svg" alt="Sleep" />
+              <img src={iconSleep} alt="Sleep" />
             </a>
           </li>
           <li className="menu__item">
             <a href="#">
-              <img src="img/nav-icon-shop.svg" alt="Shop" />
+              <img src={iconShop} alt="Shop" />
             </a>
           </li>
         </ul>
