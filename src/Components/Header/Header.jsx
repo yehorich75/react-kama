@@ -1,12 +1,12 @@
 import React from "react";
 import classes from './Header.module.css';
-import Logo from '../../img/logo.svg';
+
 import Arrows from '../../img/arrows-down.svg';
 import { ReactComponent as Map } from './Map.svg';
 import Slider from "react-slick";
 // import "~slick-carousel/slick/slick.css";
 // import "~slick-carousel/slick/slick-theme.css";
-import Menu from './Menu'
+import Aside from './Aside/Aside';
 
 
 const Header = () => {
@@ -22,14 +22,7 @@ const Header = () => {
                 <div className={classes.map}>
                     <Map />
                 </div>
-                <div className="header-aside">
-                    <div className="logo">
-                        <a href="#">
-                            <img src={Logo} alt="Logo" />
-                        </a>
-                    </div>
-                    <Menu />
-                </div>
+                <Aside />
                 <Slider />
                 <div className={classes.slider}>
                     <div class={`${classes.item} slider-item`}>

@@ -1,0 +1,21 @@
+.aside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    border-right: 1px solid rgba(#fff, 0.25%);
+    height: 100vh;
+    text-align: center;
+}
+
+.menu a span {
+        display: block;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 3px;
+        padding-top: 6px;
+        margin-bottom: 15px;
+        text-transform: capitalize;
+}
