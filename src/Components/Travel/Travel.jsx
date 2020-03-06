@@ -2,7 +2,7 @@ import React from 'react';
 
 const Travel = () => {
     return (
-      <div>
+      <div id="travel">
       </div>
     );
   }

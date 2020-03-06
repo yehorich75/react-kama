@@ -1,0 +1,40 @@
+.slider {
+    
+}
+
+.item {
+    height: 100vh;
+    background: url(../../../img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.info {
+    position: absolute;
+    right: 80px;
+    bottom: 116px;
+    text-align: right;
+}
+
+.subtitle {
+    margin-bottom: 5px;
+  }
+  
+  .subtext {
+    margin-bottom: 8px;
+  }
+  .title {
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 86px;
+    text-align: right;
+  }
+  
+  .text {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 46px;
+    margin-bottom: 20px;
+  }

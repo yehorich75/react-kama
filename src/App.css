@@ -1,38 +1,147 @@
-.App {
-  text-align: center;
+html {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #171919;
+  text-transform: uppercase;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
 }
 
-.App-link {
-  color: #61dafb;
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.headline-left {
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 7.33333px;
+  text-transform: uppercase;
+  opacity: 0.5;
+  padding-left: 103px;
+  position: relative;
+  display: inline-block;
+}
+
+.headline-left::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 80px;
+  background-color: #979797;
+  left: 0;
+  top: 50%;
+}
+
+
+.headline-right {
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 7.33333px;
+  text-transform: uppercase;
+  opacity: 0.5;
+  padding-right: 103px;
+  position: relative;
+  display: inline-block;
+}
+
+.headline-right::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 80px;
+  background-color: #979797;
+  right: 0;
+  top: 50%;
+}
+
+.title span {
+  display: inline-block;
+  font-weight: 800;
+  font-size: 200px;
+  color: rgba(#fff, 0.02);
+  position: relative;
+  transform: translateX(-54px);
+}
+
+.title h3 {
+  position: absolute;
+  font-size: 80px;
+  top: 0;
+  right: -5px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 1px;
+  background-color: #4AF6CD;
+}
+
+.subtitle {
+  display: inline-block;
+  text-align: right;
+}
+
+.subtitle__head {
+  font-weight: 800;
+  font-size: 40px;
+  padding-right: 5px;
+}
+
+.subtitle__head span {
+  font-weight: 100;
+}
+
+.descr {
+  display: inline-block;
+  padding-left: 5px;
+}
+
+.descr__head {
+  font-weight: 800;
+  font-size: 40px;
+}
+
+.descr__head span {
+  font-weight: 100;
+}
+
+.btn {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 36px;
+}
+
+.surf,
+.travel,
+.sleep {
+  padding: 160px 0 265px;
 }

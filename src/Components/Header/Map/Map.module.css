@@ -1,0 +1,19 @@
+.map {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;    
+}
+
+.line-animation {
+    stroke-dashoffset: 600;
+    stroke-dasharray: 600;
+    animation: animdash 5s 6s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes animdash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Surf = () => {
     return (
-      <div>
+      <div id="surf">
       </div>
     );
   }
