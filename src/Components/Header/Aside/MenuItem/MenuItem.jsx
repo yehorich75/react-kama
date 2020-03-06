@@ -6,10 +6,10 @@ import iconShop from "./../../../img/nav-icon-shop.svg";
 
 const MenuItem = () => {
   let menuData = [
-    { href: "#surf", icon: iconSurf, alt: "Surf" },
-    { href: "#travel", icon: iconTravel, alt: "Travel" },
-    { href: "#sleep", icon: iconSleep, alt: "Sleep" },
-    { href: "#shop", icon: iconShop, alt: "Shop" }
+    { id: 1, href: "#surf", icon: iconSurf, alt: "Surf" },
+    { id: 2, href: "#travel", icon: iconTravel, alt: "Travel" },
+    { id: 3, href: "#sleep", icon: iconSleep, alt: "Sleep" },
+    { id: 4, href: "#shop", icon: iconShop, alt: "Shop" }
   ]
 
   let newMenu = menuData.map(item => {
