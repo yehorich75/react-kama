@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./Header.module.css";
+import styles from "./Header.module.css";
 
 import Arrows from "../../img/arrows-down.svg";
 import Map from './Map/Map';
@@ -12,9 +12,9 @@ import Dotshead from "./SliderDot/Dotshead";
 
 const Header = () => {
   return (
-    <header className={classes.header}>
-      <div className={classes.title}>Go Surf</div>
-      <div className={`${classes.arrows} animated fadeInDown delay-2s slow infinite`}>
+    <header className={styles.header}>
+      <div className={styles.title}>Go Surf</div>
+      <div className={`${styles.arrows} animated fadeInDown delay-2s slow infinite`}>
         <a href="#">
           <img src={Arrows} alt="Arrow Down" />
         </a>

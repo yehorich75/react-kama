@@ -1,14 +1,14 @@
 import React from "react";
 import Logo from '../../../img/logo.svg';
 import iconSearch from '../../../img/search.svg';
-import classes from "./Aside.module.css";
+import styles from "./Aside.module.css";
 import Menu from "./Menu/Menu";
 
 
 const Aside = () => {
 
   return (
-    <div className={classes.aside}>
+    <div className={styles.aside}>
       <div className="logo">
         <a href="#">
           <img src={Logo} alt="Logo" />
@@ -18,10 +18,10 @@ const Aside = () => {
       <div className="header__search">
         <img src={iconSearch} alt="Search" />
       </div>
-      <div className={classes.date}>
+      <div className={styles.date}>
         20<span>06 | 2018</span>
       </div>
-      <div className={classes.location}>California</div>
+      <div className={styles.location}>California</div>
     </div>
   );
 };

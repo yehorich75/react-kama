@@ -1,30 +1,38 @@
 import React from "react";
-import classes from "./Menu.module.css";
+import styles from "./Menu.module.css";
 import iconSurf from './../../../../img/nav-icon-surf.svg';
 import iconTravel from './../../../../img/nav-icon-travel.svg';
 import iconSleep from './../../../../img/nav-icon-sleep.svg';
 import iconShop from './../../../../img/nav-icon-shop.svg';
+import menuData from "./menuData";
+import MenuItem from "./../MenuItem/MenuItem";
+
+menuData.map(item => {
+  return (
+    <MenuItem href={item.href} icon={item.icon} alt={item.alt} />
+  )
+})
 
 function Menu(props) {
   return (
-    <nav className={classes.menu}>
-      <ul className={classes.list}>
-        <li className={classes.item}>
+    <nav className={styles.menu}>
+      <ul className={styles.list}>
+        <li className={styles.item}>
           <a href="#surf">
             <img src={iconSurf} alt="Surf" />
           </a>
         </li>
-        <li className={classes.item}>
+        <li className={styles.item}>
           <a href="#travel">
             <img src={iconTravel} alt="Travel" />
           </a>
         </li>
-        <li className={classes.item}>
+        <li className={styles.item}>
           <a href="#sleep">
             <img src={iconSleep} alt="Sleep" />
           </a>
         </li>
-        <li className={classes.item}>
+        <li className={styles.item}>
           <a href="#shop">
             <img src={iconShop} alt="Shop" />
           </a>

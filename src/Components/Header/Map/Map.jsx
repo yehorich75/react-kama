@@ -1,10 +1,10 @@
 import React from "react";
 import { ReactComponent as MapSvg } from "./Map.svg";
-import classes from "./Map.module.css";
+import styles from "./Map.module.css";
 
 const Map = () => {
   return (
-    <div className={classes.map}>
+    <div className={styles.map}>
       <MapSvg />
     </div>
   );

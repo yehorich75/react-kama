@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./Slider.module.css";
+import styles from "./Slider.module.css";
 import arrowsRight from "../../../img/arrows-right.svg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -16,55 +16,55 @@ class SimpleSlider extends React.Component {
     };
     return (
       <Slider {...settings}>
-        <div className={classes.slider}>
-          <div className={`${classes.item} header__slider-item`}>
-            <div className={classes.info}>
-              <div className={`${classes.subtitle} headline-left`}>Surf</div>
-              <div className={classes.title}>North Shore</div>
-              <div className={`${classes.subtext} headline-left`}>
+        <div className={styles.slider}>
+          <div className={`${styles.item} header__slider-item`}>
+            <div className={styles.info}>
+              <div className={`${styles.subtitle} headline-left`}>Surf</div>
+              <div className={styles.title}>North Shore</div>
+              <div className={`${styles.subtext} headline-left`}>
                 Condition
               </div>
-              <div className={classes.text}>Radical</div>
-              <a className={classes.link} href="#">
+              <div className={styles.text}>Radical</div>
+              <a className={styles.link} href="#">
                 <img src={arrowsRight} alt="#" />
               </a>
             </div>
           </div>
-          <div className={`${classes.item} header__slider-item`}>
-            <div className={classes.info}>
-              <div className={`${classes.subtitle} headline-left`}>Surf</div>
-              <div className={classes.title}>South Shore</div>
-              <div className={`${classes.subtext} headline-left`}>
+          <div className={`${styles.item} header__slider-item`}>
+            <div className={styles.info}>
+              <div className={`${styles.subtitle} headline-left`}>Surf</div>
+              <div className={styles.title}>South Shore</div>
+              <div className={`${styles.subtext} headline-left`}>
                 Condition
               </div>
-              <div className={classes.text}>Radical</div>
-              <a className={classes.link} href="#">
+              <div className={styles.text}>Radical</div>
+              <a className={styles.link} href="#">
                 <img src={arrowsRight} alt="#" />
               </a>
             </div>
           </div>
-          <div className={`${classes.item} header__slider-item`}>
-            <div className={classes.info}>
-              <div className={`${classes.subtitle} headline-left`}>Surf</div>
-              <div className={classes.title}>West Shore</div>
-              <div className={`${classes.subtext} headline-left`}>
+          <div className={`${styles.item} header__slider-item`}>
+            <div className={styles.info}>
+              <div className={`${styles.subtitle} headline-left`}>Surf</div>
+              <div className={styles.title}>West Shore</div>
+              <div className={`${styles.subtext} headline-left`}>
                 Condition
               </div>
-              <div className={classes.text}>Radical</div>
-              <a className={classes.link} href="#">
+              <div className={styles.text}>Radical</div>
+              <a className={styles.link} href="#">
                 <img src={arrowsRight} alt="#" />
               </a>
             </div>
           </div>
-          <div className={`${classes.item} header__slider-item`}>
-            <div className={classes.info}>
-              <div className={`${classes.subtitle} headline-left`}>Surf</div>
-              <div className={classes.title}>East Shore</div>
-              <div className={`${classes.subtext} headline-left`}>
+          <div className={`${styles.item} header__slider-item`}>
+            <div className={styles.info}>
+              <div className={`${styles.subtitle} headline-left`}>Surf</div>
+              <div className={styles.title}>East Shore</div>
+              <div className={`${styles.subtext} headline-left`}>
                 Condition
               </div>
-              <div className={classes.text}>Radical</div>
-              <a className={classes.link} href="#">
+              <div className={styles.text}>Radical</div>
+              <a className={styles.link} href="#">
                 <img src={arrowsRight} alt="#" />
               </a>
             </div>

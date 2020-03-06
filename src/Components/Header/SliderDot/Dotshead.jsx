@@ -1,9 +1,9 @@
 import React from "react";
-import classes from "./Dotshead.module.css";
+import styles from "./Dotshead.module.css";
 
 const Dotshead = () => {
   return (
-    <div className={classes.dotshead}>
+    <div className={styles.dotshead}>
       <div className="slider-dots__item">
         <div className="dots-box">
           <div className="dots-box__number">01</div>
