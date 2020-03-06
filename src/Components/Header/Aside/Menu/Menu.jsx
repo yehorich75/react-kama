@@ -1,23 +1,18 @@
 import React from "react";
 import styles from "./Menu.module.css";
-import iconSurf from './../../../../img/nav-icon-surf.svg';
-import iconTravel from './../../../../img/nav-icon-travel.svg';
-import iconSleep from './../../../../img/nav-icon-sleep.svg';
-import iconShop from './../../../../img/nav-icon-shop.svg';
-import menuData from "./menuData";
+// import iconSurf from './../../../../img/nav-icon-surf.svg';
+// import iconTravel from './../../../../img/nav-icon-travel.svg';
+// import iconSleep from './../../../../img/nav-icon-sleep.svg';
+// import iconShop from './../../../../img/nav-icon-shop.svg';
+// import menuData from "./menuData";
 import MenuItem from "./../MenuItem/MenuItem";
 
-menuData.map(item => {
-  return (
-    <MenuItem href={item.href} icon={item.icon} alt={item.alt} />
-  )
-})
-
-function Menu(props) {
+function Menu({ items }) {
   return (
     <nav className={styles.menu}>
       <ul className={styles.list}>
-        <li className={styles.item}>
+        <MenuItem />
+        {/* <li className={styles.item}>
           <a href="#surf">
             <img src={iconSurf} alt="Surf" />
           </a>
@@ -36,7 +31,7 @@ function Menu(props) {
           <a href="#shop">
             <img src={iconShop} alt="Shop" />
           </a>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
