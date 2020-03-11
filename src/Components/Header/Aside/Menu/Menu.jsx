@@ -5,12 +5,13 @@ import styles from "./Menu.module.css";
 // import iconSleep from './../../../../img/nav-icon-sleep.svg';
 // import iconShop from './../../../../img/nav-icon-shop.svg';
 // import menuData from "./menuData";
-import MenuItem from "./../MenuItem/MenuItem";
+import MenuItem from "./MenuItem/MenuItem";
 
 function Menu({ items }) {
   return (
     <nav className={styles.menu}>
       <ul className={styles.list}>
+        <MenuItem />
         <MenuItem />
         {/* <li className={styles.item}>
           <a href="#surf">

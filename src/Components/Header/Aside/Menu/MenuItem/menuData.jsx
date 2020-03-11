@@ -1,3 +1,5 @@
+import React from "react";
+
 import iconSurf from './../../../../img/nav-icon-surf.svg';
 import iconTravel from './../../../../img/nav-icon-travel.svg';
 import iconSleep from './../../../../img/nav-icon-sleep.svg';
@@ -9,5 +11,11 @@ const menuData = [
     { id: 3, href: "#sleep", icon: {iconSleep}, alt: "Sleep" },
     { id: 4, href: "#shop", icon: {iconShop}, alt: "Shop" }
 ]
+
+menuData.map(item => {
+    return (
+        
+    )
+})
 
 export default menuData;
