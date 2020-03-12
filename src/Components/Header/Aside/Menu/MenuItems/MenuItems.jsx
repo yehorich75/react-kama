@@ -3,7 +3,7 @@ import iconSurf from './../../../../../img/nav-icon-surf.svg';
 import iconTravel from './../../../../../img/nav-icon-travel.svg';
 import iconSleep from './../../../../../img/nav-icon-sleep.svg';
 import iconShop from './../../../../../img/nav-icon-shop.svg';
-import styles from "./MenuItem.module.css";
+import styles from "./MenuItems.module.css";
 // import { render } from "@testing-library/react";
 // import menuData from './menuData';
 
@@ -14,7 +14,7 @@ const menuData = [
   { id: 4, href: "#shop", icon: iconShop, alt: "Shop" }
 ]
 
-const MenuItem = menuData.map(item => {
+const MenuItems = menuData.map(item => {
   return (
     <li className={styles.item}>
       <a href={item.href}>
@@ -24,4 +24,4 @@ const MenuItem = menuData.map(item => {
   );
 });
 
-export default MenuItem;
+export default MenuItems;
