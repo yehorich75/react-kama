@@ -7,3 +7,40 @@
     height: 100vh;
     text-align: center;
 }
+
+.date {
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 64px;
+}
+
+.date span {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1.4px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    display: block;
+}
+
+.location {
+    display: inline-block;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1.05px;
+    position: relative;
+    padding-left: 19px;
+    text-transform: capitalize;
+}
+
+.location:before {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 13px;
+    background-image: url(./../../../img/marker.svg);
+    left: 0px;
+    top: 0px;
+}
