@@ -16,7 +16,7 @@ const menuData = [
 
 const MenuItems = menuData.map(item => {
   return (
-    <li className={styles.item}>
+    <li className={styles.item} key={item.id}>
       <a href={item.href}>
         <img src={item.icon} alt={item.alt} />
       </a>
