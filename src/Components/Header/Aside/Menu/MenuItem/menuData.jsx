@@ -12,10 +12,10 @@ const menuData = [
     { id: 4, href: "#shop", icon: {iconShop}, alt: "Shop" }
 ]
 
-menuData.map(item => {
-    return (
+// menuData.map(item => {
+//     return (
         
-    )
-})
+//     )
+// })
 
 export default menuData;
