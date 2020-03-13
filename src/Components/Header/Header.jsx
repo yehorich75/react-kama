@@ -1,9 +1,8 @@
 import React from "react";
 import styles from "./Header.module.css";
-
 import Arrows from "../../img/arrows-down.svg";
 import Map from './Map/Map';
-import SimpleSlider from './Slider/Slider';
+import Carousel from './Slider/Slider';
 // import Slider from "react-slick";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
@@ -21,7 +20,7 @@ const Header = () => {
       </div>
       <Map />
       <Aside />
-      <SimpleSlider />
+      <Carousel />
       <Dotshead />
     </header>
   );
