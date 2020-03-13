@@ -45,7 +45,14 @@ const photos = [
   }
 ]
 
-class Carousel extends Component {
+const dots = [
+  {id: 1, number: "01", name: 'North Shore'},
+  {id: 2, number: "02", name: 'South Shore'},
+  {id: 3, number: "03", name: 'North Shore'},
+  {id: 4, number: "04", name: 'North Shore'}
+]
+
+class AppendDots extends Component {
   render() {
     const settings = {
       dots: true,
@@ -53,9 +60,24 @@ class Carousel extends Component {
       infinite: true,
       speed: 500,
       slidesToShow: 1,
-      arrows: true,
       slidesToScroll: 1,
-      className: "slides"
+      appendDots: dots => (
+        <div className="slider-dots__item">
+          <div className={styles.box}>
+            <div className={styles.number}>01</div>
+            <div className={styles.name}>North Shore</div>
+          </div>
+          <div className={styles.dotshead}>{dots}</div>
+        </div>
+      ),
+      customPaging: i => (
+        <div className="slider-dots__item">
+          <div className={styles.box}>
+            <div className={styles.number}>{dots.number}</div>
+            <div className={styles.name}>North Shore</div>
+          </div>
+        </div>
+      )
     };
     return (
       <div className={styles.slider}>
@@ -84,4 +106,4 @@ class Carousel extends Component {
   }
 }
 
-export default Carousel;
+export default AppendDots;

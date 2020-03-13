@@ -10,7 +10,7 @@ const Aside = () => {
   return (
     <div className={styles.aside}>
       <div className="logo">
-        <a href="#">
+        <a href="/#">
           <img src={Logo} alt="Logo" />
         </a>
       </div>
