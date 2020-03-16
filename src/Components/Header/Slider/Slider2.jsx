@@ -8,7 +8,7 @@ import bgSlider1 from "../../../img/header-bg.jpg";
 import bgSlider2 from "../../../img/slider-bg-2.jpg";
 import bgSlider3 from "../../../img/slider-bg-3.jpg";
 import bgSlider4 from "../../../img/slider-bg-4.jpg";
-// import Dotshead from "../SliderDot/Dotshead";
+// import DotsHead from "../SliderDot/Dotshead";
 
 const photos = [
   {
@@ -62,7 +62,7 @@ class AppendDots extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       appendDots: dots => (
-        <div className="slider-dots__item">
+        <div className={styles.dots__item}>
           <div className={styles.box}>
             <div className={styles.number}>01</div>
             <div className={styles.name}>North Shore</div>
@@ -70,15 +70,17 @@ class AppendDots extends Component {
           <div className={styles.dotshead}>{dots}</div>
         </div>
       ),
+
+  
       customPaging: i => (
-        <div className="slider-dots__item">
+        <div className={styles.dots__item}>
           <div className={styles.box}>
             <div className={styles.number}>{dots.number}</div>
             <div className={styles.name}>North Shore</div>
           </div>
         </div>
       )
-    };
+     };
     return (
       <div className={styles.slider}>
         <Slider {...settings}>
@@ -107,3 +109,4 @@ class AppendDots extends Component {
 }
 
 export default AppendDots;
+

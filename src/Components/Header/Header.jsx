@@ -8,7 +8,7 @@ import AppendDots from './Slider/Slider2';
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 import Aside from "./Aside/Aside";
-import Dotshead from "./SliderDot/Dotshead";
+// import DotsHead from "./SliderDot/Dotshead";
 
 const Header = () => {
   return (

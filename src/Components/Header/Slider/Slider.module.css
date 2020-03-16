@@ -1,6 +1,12 @@
 .slider {
 
 }
+
+.dots__item {
+  width: 100%;
+  display: inline-block;
+}
+
 .item {
     height: 100vh;
     width: 100vw;

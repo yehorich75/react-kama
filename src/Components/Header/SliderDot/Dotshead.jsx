@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./Dotshead.module.css";
+import styles from "./DotsHead.module.css";
 
-const Dotshead = () => {
+const DotsHead = () => {
   return (
     <div className={styles.dotshead}>
       <div className="slider-dots__item">
@@ -32,4 +32,4 @@ const Dotshead = () => {
   );
 };
 
-export default Dotshead;
+export default DotsHead;

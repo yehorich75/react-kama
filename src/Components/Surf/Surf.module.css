@@ -1,0 +1,98 @@
+.surf {
+    background-image: url(../../img/serf-bg.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: right 200px;
+}
+
+.title span {
+    display: inline-block;
+    font-weight: 800;
+    font-size: 200px;
+    color: rgba(255, 255, 255, 0.02);
+    position: relative;
+    transform: translateX(-54px);
+}
+
+.title h3 {
+    position: absolute;
+    font-size: 80px;
+    top: 0px;
+    right: -5px;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+}
+
+.title h3::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 80px;
+    height: 1px;
+    background-color: rgb(74, 246, 205);
+}
+
+.surfSubtitle {
+    text-align: right;
+    padding-right: 80px;
+    margin-top: -80px;
+}
+
+.subtitle {
+    display: inline-block;
+    text-align: right;
+}
+
+.headline-left {
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 7.33333px;
+    text-transform: uppercase;
+    opacity: 0.5;
+    padding-left: 103px;
+    position: relative;
+    display: inline-block;
+}
+
+.head {
+    font-weight: 800;
+    font-size: 40px;
+    padding-right: 5px;
+}
+
+.head span {
+    font-weight: 100;
+}
+
+.sliderMap {
+    max-width: 1200px;
+    min-height: 635px;
+    background: url(../../img/world-map-dots.png) center center / cover no-repeat;
+    margin: 0px auto;
+}
+
+.sliderDots {
+    position: relative;
+}
+
+.slider-dots--1 {
+    top: 348px;
+    left: 0px;
+}
+
+.dotsCircle {
+    width: 23px;
+    height: 23px;
+    background-color: rgb(74, 246, 205);
+    border-radius: 50%;
+}
+
+.dotsContent {
+    display: none;
+    position: absolute;
+    bottom: 36px;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+}
